@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int arrangeCoins(int n) {
+        int k=1;
+        scanf("%d",&n);
+        while(n>=k)
+        {
+            n-=k++;
+        }
+        return k-1;
+    }
+};
